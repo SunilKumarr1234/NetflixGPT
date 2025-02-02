@@ -2,8 +2,8 @@
 
 - npm create vite@latest ./ -- -- template react
 - configured tailwind css
--Header
--Login
+- Header
+- Login
 
 # Features
 
