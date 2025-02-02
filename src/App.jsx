@@ -1,11 +1,12 @@
 import React from 'react'
+import Body from './components/Body'
+import Login from './components/Login'
+import Header from './components/Header'
 
 const App = () => {
   return (
     <div>
-      <h1>
-        hello world 
-      </h1>
+      <Body /> 
     </div>
   )
 }
