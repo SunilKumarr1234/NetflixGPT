@@ -4,13 +4,13 @@ import Header from './Header'
 import { validate } from '../utils/validate';
 import { auth } from '../utils/firebase';
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
+
 import { addUser } from '../utils/UserSlice';
 import { useDispatch } from 'react-redux';
 
 const Login = () => {
 
-  const navigate=useNavigate();
+ 
   const dispatch =useDispatch();
 
  const[isSignIn ,setIsSignIn]=useState(true);
@@ -42,7 +42,7 @@ const Login = () => {
       // Profile updated!
        const {uid ,email , displayName , photoURL} = auth.currentUser;
        dispatch(addUser({uid :uid , email:email , displayName:displayName, photoURL:photoURL})); 
-       navigate("/browse");
+      //  navigate("/browse");
       // ...
     }).catch((error) => {
       // An error occurred
@@ -71,7 +71,7 @@ const Login = () => {
     // Signed in 
     const user = userCredential.user;
     console.log(user);
-    navigate("/browse");
+    // navigate("/browse");
     // ...
   })
   .catch((error) => {
@@ -91,8 +91,8 @@ const Login = () => {
   return (
     <div>
      <Header/> 
-     <div className=' w-screen  absolute'>
-        <img className='w-screen' src="https://assets.nflxext.com/ffe/siteui/vlv3/fb5cb900-0cb6-4728-beb5-579b9af98fdd/web/IN-en-20250127-TRIFECTA-perspective_cf66f5a3-d894-4185-9106-5f45502fc387_small.jpg" alt="mainbg" />
+     <div className='w-screen absolute'>
+        <img className=' w-full' src="https://assets.nflxext.com/ffe/siteui/vlv3/fb5cb900-0cb6-4728-beb5-579b9af98fdd/web/IN-en-20250127-TRIFECTA-perspective_cf66f5a3-d894-4185-9106-5f45502fc387_small.jpg" alt="mainbg" />
      </div>
      <form onSubmit={(e)=>e.preventDefault()} className=' p-12 w-3/12 absolute bg-black my-36 mx-auto right-0 left-0 bg-opacity-80 rounded-lg  text-white '>
         <h1 className='text-white font-bold text-3xl '>{isSignIn? "Sign In": "Sign Up"}</h1>
