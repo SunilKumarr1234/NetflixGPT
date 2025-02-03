@@ -3,7 +3,18 @@
 - npm create vite@latest ./ -- -- template react
 - configured tailwind css
 - Header
-- Login
+- Routing of app
+- Login form
+- sign up form
+- Form validation 
+- useRef hook
+- fire base setup 
+- Deploy app to production 
+- Create sign up user account 
+- implemented sign in user api 
+- created redux store  with Userslice
+- implemented sign out 
+- update profile 
 
 # Features
 
