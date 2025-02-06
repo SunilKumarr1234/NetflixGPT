@@ -7,6 +7,7 @@ import { createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfil
 
 import { addUser } from '../utils/UserSlice';
 import { useDispatch } from 'react-redux';
+import { PROFILE } from '../utils/constants';
 
 const Login = () => {
 
@@ -37,7 +38,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-    updateProfile(user, {displayName: username.current.value , photoURL:{PROFILE}
+    updateProfile(user, {displayName: username.current.value , photoURL:PROFILE
     }).then(() => {
       // Profile updated!
        const {uid ,email , displayName , photoURL} = auth.currentUser;
