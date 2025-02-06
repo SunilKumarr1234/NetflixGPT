@@ -18,7 +18,7 @@
 - BugFix: sign up user DisplayName and profile picture update
 - BugFix: if the user is not logged in redirect /browser to login page and vice versa 
 - unsubcribed the onAuthStateChanged callback 
-- 
+- fixed git hub
 
 # Features
 
