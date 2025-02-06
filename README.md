@@ -19,6 +19,8 @@
 - BugFix: if the user is not logged in redirect /browser to login page and vice versa 
 - unsubcribed the onAuthStateChanged callback 
 - fixed git hub
+- Registered for TMDB API 
+- Fetched  now playing movies data using API
 
 # Features
 
