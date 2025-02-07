@@ -28,7 +28,12 @@
 - fetch data for trailer video
 - update store with trailer video data 
 - embeded the youtube video and made  it auto play and mute 
-- used tailwind classes to make main container look awesome 
+- used tailwind classes to make main container look awesome
+- Build Secondary Component 
+- Build Movie List and Movie Card 
+- TMDB image url
+- used popular , upcoming , trending custom hooks 
+- GPT search Feature 
 
 # Features
 
