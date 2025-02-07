@@ -22,12 +22,10 @@ const Login = () => {
 
  const handlebuttonclick=()=>{
    // validate the form
-   // console.log("email",email.current.value);
-   // console.log("password",password.current.value);
+ 
   
 
    const message= validate(email.current.value,password.current.value);
-   console.log(message)
    setErrorMessage(message);
    if(message) return;
 
@@ -50,7 +48,6 @@ const Login = () => {
       setErrorMessage(error.message);
       // ...
     });
-    console.log(user);
     
     // ...
   })
@@ -71,7 +68,6 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    console.log(user);
     // navigate("/browse");
     // ...
   })

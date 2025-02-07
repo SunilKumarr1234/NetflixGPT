@@ -21,6 +21,14 @@
 - fixed git hub
 - Registered for TMDB API 
 - Fetched  now playing movies data using API
+- custom hook for now playing video
+- create movie slice
+- update store with mmovie data
+- planning for main container and secondary container
+- fetch data for trailer video
+- update store with trailer video data 
+- embeded the youtube video and made  it auto play and mute 
+- used tailwind classes to make main container look awesome 
 
 # Features
 
