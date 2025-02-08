@@ -7,7 +7,7 @@ import { createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfil
 
 import { addUser } from '../utils/UserSlice';
 import { useDispatch } from 'react-redux';
-import { PROFILE } from '../utils/constants';
+import { LOGIN_PAGE_BG_IMG, PROFILE } from '../utils/constants';
 
 const Login = () => {
 
@@ -89,7 +89,7 @@ const Login = () => {
     <div>
      <Header/> 
      <div className='w-screen absolute'>
-        <img className=' w-full' src="https://assets.nflxext.com/ffe/siteui/vlv3/fb5cb900-0cb6-4728-beb5-579b9af98fdd/web/IN-en-20250127-TRIFECTA-perspective_cf66f5a3-d894-4185-9106-5f45502fc387_small.jpg" alt="mainbg" />
+        <img className=' w-full' src={LOGIN_PAGE_BG_IMG} alt="mainbg" />
      </div>
      <form onSubmit={(e)=>e.preventDefault()} className=' p-12 w-3/12 absolute bg-black my-36 mx-auto right-0 left-0 bg-opacity-80 rounded-lg  text-white '>
         <h1 className='text-white font-bold text-3xl '>{isSignIn? "Sign In": "Sign Up"}</h1>

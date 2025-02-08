@@ -34,6 +34,8 @@
 - TMDB image url
 - used popular , upcoming , trending custom hooks 
 - GPT search Feature 
+- GPT search bar 
+- made GPT search page multilingual 
 
 # Features
 
